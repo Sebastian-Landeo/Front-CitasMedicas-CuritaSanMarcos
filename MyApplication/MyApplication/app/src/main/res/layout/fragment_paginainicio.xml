@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.MyApplication.FullscreenContainer"
+    android:background="#2260FF"
+    tools:context=".Loading">
+
+    <TextView
+        android:id="@+id/fullscreen_paginainicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="?attr/fullscreenTextColor"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.MyApplication.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_nombre"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="340dp"
+            android:fontFamily="@font/extra_bold"
+            android:gravity="center_horizontal"
+            android:text="Curita             San Marcos"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text_app"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="470dp"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/aplicaci_n_de_citas_m_dicas"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_91"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="200dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
