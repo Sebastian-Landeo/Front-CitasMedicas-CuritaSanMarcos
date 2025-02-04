@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.MyApplication.FullscreenContainer"
+    android:background="#2260FF"
+    tools:context=".Loading">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.MyApplication.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="340dp"
+            android:fontFamily="@font/extra_bold"
+            android:gravity="center_horizontal"
+            android:text="Curita             San Marcos"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+        <!-- Segundo TextView: Aplicación de Citas Médicas -->
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="470dp"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center_horizontal"
+            android:text="Aplicación de Citas Médicas"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_91"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="200dp" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="aplicaci_n_de_citas_m_dicas">Aplicación de Citas Médicas</string>
+    <string name="registrarse">registrarse</string>
+    <string name="recibe_atenci_n_m_dica_especializada_para_diagnosticar_tratar_y_prevenir_enfermedades_asegurando_tu_bienestar">Recibe atención médica especializada para diagnosticar, tratar y prevenir enfermedades, asegurando tu bienestar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="curita_san_marcos">Curita San Marcos</string>
+    <string name="logo">Logo</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+</resources>
