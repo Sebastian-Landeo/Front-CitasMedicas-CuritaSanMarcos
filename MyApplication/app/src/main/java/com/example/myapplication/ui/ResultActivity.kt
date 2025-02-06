@@ -31,5 +31,13 @@ class ResultActivity : AppCompatActivity() {
             startActivity(intent)
             finish() // Opcional: Cierra ResultActivity si ya no la necesitas
         }
+
+        // Establecer OnClickListener para el botón de registro
+        val buttonRegistro = findViewById<Button>(R.id.button_registro)
+        buttonRegistro.setOnClickListener {
+            // Crear un Intent para iniciar RegisterActivity
+            val intent = Intent(this@ResultActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
