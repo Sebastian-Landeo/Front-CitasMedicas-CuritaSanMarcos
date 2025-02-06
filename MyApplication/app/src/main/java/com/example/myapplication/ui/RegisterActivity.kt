@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import android.os.Handler
 import android.widget.Button
+import android.widget.AdapterView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,7 +28,7 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
 
-        // Obtener el Spinner de tipo de usuario (Estudiante o Docente)
+        // Obtener el Spinner de tipo de usuario (Estudiante, Docente, Externo)
         val spinnerTipoUsuario = findViewById<Spinner>(R.id.TextEstado)
 
         // Crear un ArrayAdapter para el Spinner usando el string-array de strings.xml
@@ -43,16 +44,50 @@ class RegisterActivity : AppCompatActivity() {
         // Establecer el Adapter al Spinner
         spinnerTipoUsuario.adapter = adapter
 
-        // Obtener los elementos del layout
+        // Obtener el EditText del correo y del código
         val editTextCorreo = findViewById<EditText>(R.id.TextCorreo)
+        val editTextCodigo = findViewById<EditText>(R.id.TextCodigo)
         val btnValidarCorreo = findViewById<Button>(R.id.buttonRegistro)
+
+        // Habilitar el campo de código por defecto
+        editTextCodigo.isEnabled = true
+        editTextCodigo.isFocusable = true
+
+        // Función para habilitar o deshabilitar el EditText de código según el tipo de usuario
+        fun updateCodigoFieldState() {
+            val tipoUsuario = spinnerTipoUsuario.selectedItem.toString()
+
+            // Si el tipo de usuario es "Externo", desactivar el EditText de código
+            if (tipoUsuario == "Externo") {
+                editTextCodigo.isEnabled = false  // Deshabilita el EditText de código
+                editTextCodigo.isFocusable = false  // No permite interactuar con el campo
+            } else {
+                // Si el tipo de usuario no es "Externo", habilitar el EditText de código
+                editTextCodigo.isEnabled = true
+                editTextCodigo.isFocusable = true
+            }
+        }
+
+        // Llamar a la función para verificar el estado inicial
+        updateCodigoFieldState()
+
+        // Configurar el Listener para el Spinner de tipo de usuario
+        spinnerTipoUsuario.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parentView: AdapterView<*>, selectedItemView: android.view.View?, position: Int, id: Long) {
+                // Verificar y actualizar el estado del campo de código
+                updateCodigoFieldState()
+            }
+
+            override fun onNothingSelected(parentView: AdapterView<*>) {
+                // No hace nada si no hay selección
+            }
+        }
 
         // Lógica para la validación del correo cuando se presiona el botón
         btnValidarCorreo.setOnClickListener {
             val tipoUsuario = spinnerTipoUsuario.selectedItem.toString()
             val correo = editTextCorreo.text.toString()
 
-            // Validar si el correo termina en @unmsm.edu.pe
             // Validar si el correo termina en @unmsm.edu.pe
             if (tipoUsuario == "Estudiante" || tipoUsuario == "Docente") {
                 if (!correo.endsWith("@unmsm.edu.pe")) {
@@ -71,4 +106,3 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 }
-
