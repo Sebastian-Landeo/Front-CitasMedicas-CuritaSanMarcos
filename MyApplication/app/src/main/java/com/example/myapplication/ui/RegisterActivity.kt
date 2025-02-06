@@ -29,11 +29,11 @@ class RegisterActivity : AppCompatActivity() {
         val adapter = ArrayAdapter.createFromResource(
             this,
             R.array.estado_opciones, // Nombre del recurso string-array
-            android.R.layout.simple_spinner_item // Diseño predeterminado del Spinner
+            R.layout.spinner_item// Diseño del Spinner
         )
 
         // Especificar cómo se deben mostrar las opciones al desplegar
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter.setDropDownViewResource(R.layout.spinner_item)
 
         // Establecer el Adapter al Spinner
         spinner.adapter = adapter

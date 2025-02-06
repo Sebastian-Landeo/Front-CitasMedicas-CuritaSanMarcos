@@ -232,7 +232,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="329dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         app:cardCornerRadius="16dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="330dp"
@@ -240,18 +240,17 @@
 
         <Spinner
             android:id="@+id/TextEstado"
-            android:layout_width="329dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ECF1FF"
+            android:background="@drawable/spinner_background"
             android:fontFamily="@font/light"
-            android:padding="13dp"
             android:textColor="#809CFF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-
     </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/textCodigo"

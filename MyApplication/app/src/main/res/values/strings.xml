@@ -16,6 +16,7 @@
     <string name="contrase_a">contraseña</string>
 
     <string-array name="estado_opciones">
+        <item>Seleccione una opción</item>
         <item>Estudiante</item>
         <item>Docente</item>
         <item>Externo</item>
