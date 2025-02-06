@@ -49,10 +49,6 @@ class RegisterActivity : AppCompatActivity() {
         val editTextCodigo = findViewById<EditText>(R.id.TextCodigo)
         val btnValidarCorreo = findViewById<Button>(R.id.buttonRegistro)
 
-        // Habilitar el campo de código por defecto
-        editTextCodigo.isEnabled = true
-        editTextCodigo.isFocusable = true
-
         // Función para habilitar o deshabilitar el EditText de código según el tipo de usuario
         fun updateCodigoFieldState() {
             val tipoUsuario = spinnerTipoUsuario.selectedItem.toString()
