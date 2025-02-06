@@ -1,6 +1,7 @@
 package com.example.myapplication.ui
 
 import android.os.Bundle
+import android.content.Intent
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Spinner
@@ -97,8 +98,14 @@ class RegisterActivity : AppCompatActivity() {
                 } else {
                     // Limpiar el error si el correo es válido
                     editTextCorreo.error = null
+
+
                 }
             }
+
+            // Redirigir a la actividad RegisterSuccessfulActivity
+            val intent = Intent(this, RegisterSuccessfulActivity::class.java)
+            startActivity(intent)
         }
     }
 }
