@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/extra_bold"
+        android:text="Nuevo Usuario"
+        android:textAlignment="center"
+        android:textColor="#2260FF"
+        android:textColorLink="#2260FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="42dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="425dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/TextCorreo"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="Correo electrónico"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="207dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#2260FF"
+        android:fontFamily="@font/semi_bold"
+        android:text="Registrase"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColorLink="#2260FF"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="665dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Correo electrónico"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="385dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="475dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="515dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/PasswordInicio"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="90dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="130dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/NombreRegister"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="Nombre"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Apellido"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="230dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/TextApellido"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="Apellido"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Estado Actual"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="285dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="330dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/TextEstado"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="Seleccione una opción"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semi_bold"
+        android:text="Código"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="570dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="605dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/TextCodigo"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:background="#ECF1FF"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="No disponible para externos"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#809CFF"
+            android:textColorHint="#809CFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>
