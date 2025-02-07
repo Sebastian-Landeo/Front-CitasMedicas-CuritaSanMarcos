@@ -98,14 +98,12 @@ class RegisterActivity : AppCompatActivity() {
                 } else {
                     // Limpiar el error si el correo es válido
                     editTextCorreo.error = null
-
-
+                    // Redirigir a la actividad RegisterSuccessfulActivity
+                    val intent = Intent(this, RegisterSuccessfulActivity::class.java)
+                    startActivity(intent)
                 }
             }
 
-            // Redirigir a la actividad RegisterSuccessfulActivity
-            val intent = Intent(this, RegisterSuccessfulActivity::class.java)
-            startActivity(intent)
         }
     }
 }
